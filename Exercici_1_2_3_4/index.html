@@ -107,8 +107,8 @@
         </div>
       </div>
 
-      <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
-        <li class="mx-5 nav-item" role="presentation">
+      <ul class="nav nav-tabs justify-content-center text-center flex-column flex-lg-row border-0" id="myTab" role="tablist">
+        <li class=" border-bottom nav-item" role="presentation">
           <button
             class="btn active"
             id="simple-tab"
@@ -122,7 +122,7 @@
             Simple Bookmarking
           </button>
         </li>
-        <li class="mx-5 nav-item" role="presentation">
+        <li class=" border-bottom nav-item" role="presentation">
           <button
             class="btn"
             id="speedy-tab"
@@ -136,7 +136,7 @@
             Speedy Searching
           </button>
         </li>
-        <li class="mx-5 nav-item" role="presentation">
+        <li class="border-bottom nav-item" role="presentation">
           <button
             class="btn"
             id="easy-tab"
@@ -467,86 +467,95 @@
       </div>
 
       <!-- exercici 5 -->
-      <div class="row justify-content-center bg-primary text-center text-white">
-        <div class="col-lg-6">
-          <p class="pt-5 fw-light" style="font-size: 0.7em">
-            3 5 . 0 0 0 + A L R E A D Y J O I N E D
-          </p>
-          <p class="fs-3 text-secondary pb-5 bg-primary mx-center text-white">
-            Stay up-to-date whit what <br />we´re doing
-          </p>
-        </div>
-      </div>
 
-      <div class="row bg-primary ">
-      <form class="row g-3 justify-content-center">
-        <div class="d-grid col-lg-3 mb-3">
-          <label for="inputMail" class="visually-hidden">Mail</label>
-          <input
-            type="email"
-            class="form-control"
-            id="inputMail"
-            placeholder="Enter your email adress"
-          />
-        </div>
-        <div class="d-grid col-lg-3 ">
-          <button type="submit" class="btn btn-danger mb-3">
-            Contact Us
-          </button>
-        </div>
-      </form>
-    </div>
-
-    <div class="row bg-secondary">
-    <nav class="navbar navbar-expand-md navbar-light text-white">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          ><img src="./img/logo-bookmark.svg" alt="Bookmark"
-        /></a>
-
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >FEATURES</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >PRICING</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >CONTACT</a
-              >
-            </li>
-          </ul>
-          <button class="btn bg-danger text-white shadow" type="submit">
-            LOGIN
-          </button>
-        </div>
-      </div>
-    </nav>
-  </div>
-
-    
-
+      <div class="row bg-primary">
         
+        <div class="row justify-content-center bg-primary text-center text-white">
+          <div class="col-lg-6">
+            <p class="pt-5 fw-light" style="font-size: 0.7em">
+              3 5 . 0 0 0 + A L R E A D Y     J O I N E D
+            </p>
+            <p class="fs-3 text-secondary pb-5 bg-primary mx-center text-white">
+              Stay up-to-date whit what <br />we´re doing
+            </p>
+          </div>
+        </div>
+  
+
+        <form class="row g-3 needs-validation justify-content-center mb-3" novalidate>
+       
+       <div class="col-md-4 position-relative">
+        
+         <div class="input-group has-validation">
+           <input type="email" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required  placeholder="Enter your email adress">
+           <div class="invalid-tooltip">
+             <span class="fst-italic text-white"> Whoops,make sure it´s an email</span>
+           </div>
+         </div>
+       </div>
+      
+       <div class="d-grid col-lg-3">
+         <button class="btn btn-danger" type="submit">Contact Us</button>
+       </div>
+   
+             </form>
+   
+   
+        <nav class="nav flex-column flex-lg-row text-center bg-secondary p-3 gap-1">
+   
+          <a class="navbar-brand" href="#"><img src="./img/logo-bookmark.svg" alt="Bookmark" /></a>
+      
+         <a class="nav-link active text-white" aria-current="page" href="#"
+           >FEATURES</a
+         >
+         <a class="nav-link active text-white" aria-current="page" href="#"
+           >PRICING</a
+         >   
+         <a class="nav-link active text-white" aria-current="page" href="#"
+           >CONTACT</a
+         >
+   
+         <div class="ms-lg-auto">
+             <a class="navbar-brand" href="#">
+             <img src="./img/icon-facebook.svg" alt="Bookmark" class="mx-4" />
+             <img src="./img/icon-twitter.svg" alt="Bookmark" />
+             </a>
+        </div>
+   
+        </nav>
+   
+       </div>
 
 
     </div>
+
+
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function () {
+    'use strict'
+  
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.needs-validation')
+  
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms)
+      .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+  
+          form.classList.add('was-validated')
+        }, false)
+      })
+  })()
+    </script>
+
+
+    <!--Cambiar el icini de sandwich-->
+    <!--Cambiar las flechas azules del acordeon-->
+    <!--Poner la viñeta azul-->
   </body>
 </html>
