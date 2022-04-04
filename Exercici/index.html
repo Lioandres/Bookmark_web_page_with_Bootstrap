@@ -20,7 +20,7 @@
   </head>
 
   <body>
-    <div class="container-fluid my-5">
+    <div class="container">
       <!--exercici 1-->
       <nav class="navbar navbar-expand-md navbar-light">
         <div class="container-fluid">
@@ -29,7 +29,7 @@
           /></a>
 
           <button
-            class="navbar-toggler"
+            class="navbar-toggler border-0"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -37,7 +37,7 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span><img src="./img/icon-hamburger.svg" alt="" /></span>
           </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -58,7 +58,7 @@
                 >
               </li>
             </ul>
-            <button class="btn bg-danger text-white shadow" type="submit">
+            <button class="btn btn-danger text-white shadow" type="submit">
               LOGIN
             </button>
           </div>
@@ -107,8 +107,12 @@
         </div>
       </div>
 
-      <ul class="nav nav-tabs justify-content-center text-center flex-column flex-lg-row border-0" id="myTab" role="tablist">
-        <li class=" border-bottom nav-item" role="presentation">
+      <ul
+        class="nav nav-tabs justify-content-center text-center flex-column flex-lg-row border-0"
+        id="myTab"
+        role="tablist"
+      >
+        <li class="border-bottom nav-item" role="presentation">
           <button
             class="btn active"
             id="simple-tab"
@@ -122,7 +126,7 @@
             Simple Bookmarking
           </button>
         </li>
-        <li class=" border-bottom nav-item" role="presentation">
+        <li class="border-bottom nav-item" role="presentation">
           <button
             class="btn"
             id="speedy-tab"
@@ -401,22 +405,22 @@
               </div>
             </div>
             <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingTwo">
+              <h2 class="accordion-header" id="flush-headingThree">
                 <button
                   class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseTwo"
+                  data-bs-target="#flush-collapseThree"
                   aria-expanded="false"
-                  aria-controls="flush-collapseTwo"
+                  aria-controls="flush-collapseThree"
                 >
                   Is there a mobile app?
                 </button>
               </h2>
               <div
-                id="flush-collapseTwo"
+                id="flush-collapseThree"
                 class="accordion-collapse collapse"
-                aria-labelledby="flush-headingTwo"
+                aria-labelledby="flush-headingThree"
                 data-bs-parent="#accordionFlushExample"
               >
                 <div class="accordion-body">
@@ -427,22 +431,22 @@
               </div>
             </div>
             <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingThree">
+              <h2 class="accordion-header" id="flush-headingFour">
                 <button
                   class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseThree"
+                  data-bs-target="#flush-collapseFour"
                   aria-expanded="false"
-                  aria-controls="flush-collapseThree"
+                  aria-controls="flush-collapseFour"
                 >
                   What about other Chromiun browsers
                 </button>
               </h2>
               <div
-                id="flush-collapseThree"
+                id="flush-collapseFour"
                 class="accordion-collapse collapse"
-                aria-labelledby="flush-headingThree"
+                aria-labelledby="flush-headingFour"
                 data-bs-parent="#accordionFlushExample"
               >
                 <div class="accordion-body">
@@ -467,94 +471,99 @@
       </div>
 
       <!-- exercici 5 -->
-
-      <div class="row bg-primary">
-        
-        <div class="row justify-content-center bg-primary text-center text-white">
+      <div class="container bg-primary">
+        <div
+          class="row justify-content-center bg-primary text-center text-white"
+        >
           <div class="col-lg-6">
             <p class="pt-5 fw-light" style="font-size: 0.7em">
-              3 5 . 0 0 0 + A L R E A D Y     J O I N E D
+              3 5 . 0 0 0 + A L R E A D Y J O I N E D
             </p>
             <p class="fs-3 text-secondary pb-5 bg-primary mx-center text-white">
               Stay up-to-date whit what <br />we´re doing
             </p>
           </div>
         </div>
-  
 
-        <form class="row g-3 needs-validation justify-content-center mb-3" novalidate>
-       
-       <div class="col-md-4 position-relative">
-        
-         <div class="input-group has-validation">
-           <input type="email" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required  placeholder="Enter your email adress">
-           <div class="invalid-tooltip">
-             <span class="fst-italic text-white"> Whoops,make sure it´s an email</span>
-           </div>
-         </div>
-       </div>
-      
-       <div class="d-grid col-lg-3">
-         <button class="btn btn-danger" type="submit">Contact Us</button>
-       </div>
-   
-             </form>
-   
-   
-        <nav class="nav flex-column flex-lg-row text-center bg-secondary p-3 gap-1">
-   
-          <a class="navbar-brand" href="#"><img src="./img/logo-bookmark.svg" alt="Bookmark" /></a>
-      
-         <a class="nav-link active text-white" aria-current="page" href="#"
-           >FEATURES</a
-         >
-         <a class="nav-link active text-white" aria-current="page" href="#"
-           >PRICING</a
-         >   
-         <a class="nav-link active text-white" aria-current="page" href="#"
-           >CONTACT</a
-         >
-   
-         <div class="ms-lg-auto">
-             <a class="navbar-brand" href="#">
-             <img src="./img/icon-facebook.svg" alt="Bookmark" class="mx-4" />
-             <img src="./img/icon-twitter.svg" alt="Bookmark" />
-             </a>
+        <form
+          class="row g-3 needs-validation justify-content-center bg-primary"
+          novalidate
+        >
+          <div class="col-md-4 position-relative">
+            <div class="input-group has-validation">
+              <input
+                type="email"
+                class="form-control"
+                id="validationTooltipUsername"
+                aria-describedby="validationTooltipUsernamePrepend"
+                required
+                placeholder="Enter your email adress"
+              />
+              <div class="invalid-tooltip">
+                <span class="fst-italic text-white">
+                  Whoops,make sure it´s an email</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="d-grid col-lg-3 mb-3">
+            <button class="btn btn-danger" type="submit">Contact Us</button>
+          </div>
+        </form>
+      </div>
+      <nav
+        class="nav flex-column flex-lg-row text-center bg-secondary p-3 gap-1"
+      >
+        <a class="navbar-brand" href="#"
+          ><img src="./img/logo-bookmark.svg" alt="Bookmark"
+        /></a>
+
+        <a class="nav-link active text-white" aria-current="page" href="#"
+          >FEATURES</a
+        >
+        <a class="nav-link active text-white" aria-current="page" href="#"
+          >PRICING</a
+        >
+        <a class="nav-link active text-white" aria-current="page" href="#"
+          >CONTACT</a
+        >
+
+        <div class="ms-lg-auto">
+          <a class="navbar-brand" href="#">
+            <img src="./img/icon-facebook.svg" alt="Bookmark" class="mx-4" />
+            <img src="./img/icon-twitter.svg" alt="Bookmark" />
+          </a>
         </div>
-   
-        </nav>
-   
-       </div>
-
-
+      </nav>
     </div>
-
 
     <script>
       // Example starter JavaScript for disabling form submissions if there are invalid fields
-  (function () {
-    'use strict'
-  
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.querySelectorAll('.needs-validation')
-  
-    // Loop over them and prevent submission
-    Array.prototype.slice.call(forms)
-      .forEach(function (form) {
-        form.addEventListener('submit', function (event) {
-          if (!form.checkValidity()) {
-            event.preventDefault()
-            event.stopPropagation()
-          }
-  
-          form.classList.add('was-validated')
-        }, false)
-      })
-  })()
+      (function () {
+        "use strict";
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll(".needs-validation");
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms).forEach(function (form) {
+          form.addEventListener(
+            "submit",
+            function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
     </script>
 
-
-    <!--Cambiar el icini de sandwich-->
     <!--Cambiar las flechas azules del acordeon-->
     <!--Poner la viñeta azul-->
   </body>
