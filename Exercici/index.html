@@ -4,18 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-
+    <link rel="stylesheet" href="./scss/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <title>Document</title>
   </head>
 
@@ -43,35 +33,38 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >FEATURES</a
+                <a class="nav-link" aria-current="page" href="#"
+                  ><span class="text-danger-active">FEATURES</span> </a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >PRICING</a
+                <a class="nav-link" aria-current="page" href="#"
+                  ><span class="text-danger-active">PRICING</span></a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >CONTACT</a
+                <a class="nav-link" aria-current="page" href="#"
+                  ><span class="text-danger-active">CONTACT</span></a
                 >
               </li>
             </ul>
-            <button class="btn btn-danger text-white shadow" type="submit">
-              LOGIN
+            <button class="btn btn-danger text-white shadow btn-danger-active" type="button"><span class="text-danger-active">
+              LOGIN</span>
             </button>
           </div>
         </div>
       </nav>
 
       <div class="row align-items-center">
+        
         <div class="p-4 col-12 col-lg-6 order-lg-2">
-          <img
-            class="img-fluid"
-            src="./img/illustration-hero.svg"
-            alt="ilustration-hero"
-          />
+            <img
+             class="img-fluid"
+             src="./img/illustration-hero.svg"
+             alt="ilustration-hero"
+             />
+            <div class="round-arrow-right">
+            </div>
         </div>
 
         <div class="p-4 col-12 col-lg-6 text-center text-lg-start">
@@ -83,12 +76,12 @@
               for free.
             </p>
           </div>
-          <div class="buttoms">
-            <button class="btn bg-primary text-white shadow" type="submit">
-              Get it on Chrome
+          <div>
+            <button class="btn btn-primary text-white shadow btn-primary-active" type="button"><span class="text-primary-active">
+              Get it on Chrome</span>
             </button>
-            <button class="btn bg-light shadow" type="submit">
-              Get in onFireflox
+            <button class="btn btn-light shadow btn-white-active" type="submit">
+              Get in on Fireflox
             </button>
           </div>
         </div>
@@ -114,7 +107,7 @@
       >
         <li class="border-bottom nav-item" role="presentation">
           <button
-            class="btn active"
+            class="link-tab"
             id="simple-tab"
             data-bs-toggle="tab"
             data-bs-target="#simple"
@@ -123,12 +116,12 @@
             aria-controls="simple"
             aria-selected="true"
           >
-            Simple Bookmarking
+            <span> Simple Bookmarking</span>
           </button>
         </li>
         <li class="border-bottom nav-item" role="presentation">
           <button
-            class="btn"
+            class="link-tab"
             id="speedy-tab"
             data-bs-toggle="tab"
             data-bs-target="#speedy"
@@ -142,7 +135,7 @@
         </li>
         <li class="border-bottom nav-item" role="presentation">
           <button
-            class="btn"
+            class="link-tab"
             id="easy-tab"
             data-bs-toggle="tab"
             data-bs-target="#easy"
@@ -170,7 +163,10 @@
                 src="./img/illustration-features-tab-1.svg"
                 alt="ilustration-hero"
               />
+              <div class="round-arrow-left">
+              </div>
             </div>
+            
 
             <div class="p-5 col-12 col-lg-6 text-center text-lg-start">
               <div class="fs-2 fw-bold">Bookmark in one click</div>
@@ -182,8 +178,8 @@
                 </p>
               </div>
               <div class="buttoms">
-                <button class="btn bg-primary text-white shadow" type="submit">
-                  More info
+                <button class="btn btn-primary text-white shadow btn-primary-active" type="submit">
+                 <span class="text-primary-active">More info</span> 
                 </button>
               </div>
             </div>
@@ -203,6 +199,8 @@
                 src="./img/illustration-features-tab-2.svg"
                 alt="ilustration-hero"
               />
+              <div class="round-arrow-left">
+              </div>
             </div>
 
             <div class="p-5 col-12 col-lg-6 text-center text-lg-start">
@@ -215,8 +213,8 @@
                 </p>
               </div>
               <div class="buttoms">
-                <button class="btn bg-primary text-white shadow" type="submit">
-                  More info
+                <button class="btn btn-primary text-white shadow btn-primary-active" type="submit"><span class="text-primary-active">
+                  More info</span>
                 </button>
               </div>
             </div>
@@ -236,6 +234,8 @@
                 src="./img/illustration-features-tab-3.svg"
                 alt="ilustration-hero"
               />
+              <div class="round-arrow-left">
+              </div>
             </div>
 
             <div class="p-5 col-12 col-lg-6 text-center text-lg-start">
@@ -247,8 +247,8 @@
                 </p>
               </div>
               <div class="buttoms">
-                <button class="btn bg-primary text-white shadow" type="submit">
-                  More info
+                <button class="btn btn-primary text-white shadow btn-primary-active" type="submit"><span class="text-primary-active">
+                  More info</span>
                 </button>
               </div>
             </div>
@@ -282,10 +282,10 @@
             </div>
             <img src="./img/bg-dots.svg" alt="dot" class="card-img my-3" />
             <button
-              class="btn bg-primary text-white shadow mb-3 mx-auto"
+              class="btn btn-primary text-white shadow mb-3 mx-auto btn-primary-active"
               type="submit"
-            >
-              Add & Install Extension
+            ><span class="text-primary-active">Add & Install Extension</span>
+            
             </button>
           </div>
         </div>
@@ -304,10 +304,10 @@
             </div>
             <img src="./img/bg-dots.svg" alt="dot" class="card-img my-3" />
             <button
-              class="btn bg-primary text-white shadow mb-3 mx-auto"
+              class="btn btn-primary text-white shadow mb-3 mx-auto btn-primary-active"
               type="submit"
-            >
-              Add & Install Extension
+            ><span class="text-primary-active">Add & Install Extension</span>
+              
             </button>
           </div>
         </div>
@@ -326,10 +326,10 @@
             </div>
             <img src="./img/bg-dots.svg" alt="dot" class="card-img my-3" />
             <button
-              class="btn bg-primary text-white shadow mb-3 mx-auto"
+              class="btn btn-primary text-white shadow mb-3 mx-auto btn-primary-active"
               type="submit"
-            >
-              Add & Install Extension
+            ><span class="text-primary-active">Add & Install Extension</span>
+             
             </button>
           </div>
         </div>
@@ -355,14 +355,14 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingOne">
                 <button
-                  class="accordion-button collapsed"
+                  class="accordion-button collapsed btn-q"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseOne"
                   aria-expanded="false"
                   aria-controls="flush-collapseOne"
                 >
-                  What is Bookmark?
+                  <span class="text-danger-active"> What is Bookmark?</span>
                 </button>
               </h2>
               <div
@@ -381,14 +381,14 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingTwo">
                 <button
-                  class="accordion-button collapsed"
+                  class="accordion-button collapsed btn-q"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseTwo"
                   aria-expanded="false"
                   aria-controls="flush-collapseTwo"
                 >
-                  How can I request a new browser?
+                <span class="text-danger-active">How can I request a new browser?</span>
                 </button>
               </h2>
               <div
@@ -407,14 +407,14 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingThree">
                 <button
-                  class="accordion-button collapsed"
+                  class="accordion-button collapsed btn-q"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseThree"
                   aria-expanded="false"
                   aria-controls="flush-collapseThree"
                 >
-                  Is there a mobile app?
+                <span class="text-danger-active">Is there a mobile app?</span>
                 </button>
               </h2>
               <div
@@ -433,14 +433,14 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingFour">
                 <button
-                  class="accordion-button collapsed"
+                  class="accordion-button collapsed btn-q"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseFour"
                   aria-expanded="false"
                   aria-controls="flush-collapseFour"
                 >
-                  What about other Chromiun browsers
+                <span class="text-danger-active">What about other Chromiun browsers</span>
                 </button>
               </h2>
               <div
@@ -463,8 +463,8 @@
       <div class="row text-center m-5">
         <div class="col-lg-12">
           <div class="buttoms">
-            <button class="btn bg-primary text-white shadow" type="submit">
-              More info
+            <button class="btn btn-primary text-white shadow btn-primary-active" type="submit">
+               <span class="text-primary-active">More info</span> 
             </button>
           </div>
         </div>
@@ -508,31 +508,31 @@
           </div>
 
           <div class="d-grid col-lg-3 mb-3">
-            <button class="btn btn-danger" type="submit">Contact Us</button>
+            <button class="btn btn-danger text-white btn-danger-active" type="submit"><span class="text-danger-active"> CONTACT US</span></button>
           </div>
         </form>
       </div>
       <nav
-        class="nav flex-column flex-lg-row text-center bg-secondary p-3 gap-1"
+        class="nav flex-column flex-lg-row text-center bg-dark p-3 gap-1"
       >
         <a class="navbar-brand" href="#"
-          ><img src="./img/logo-bookmark.svg" alt="Bookmark"
+          ><img class="bookmark-bottom" src="./img/logo-bookmark.svg" alt="Bookmark"
         /></a>
 
-        <a class="nav-link active text-white" aria-current="page" href="#"
-          >FEATURES</a
+        <a class="nav-link text-white text-danger-active" aria-current="page" href="#"
+          ><span class="text-danger-active"> FEATURES</span></a
         >
-        <a class="nav-link active text-white" aria-current="page" href="#"
-          >PRICING</a
+        <a class="nav-link text-white" aria-current="page" href="#"
+          ><span class="text-danger-active">PRICING</span> </a
         >
-        <a class="nav-link active text-white" aria-current="page" href="#"
-          >CONTACT</a
+        <a class="nav-link text-white" aria-current="page" href="#"
+          ><span class="text-danger-active"> CONTACT</span></a
         >
 
         <div class="ms-lg-auto">
           <a class="navbar-brand" href="#">
-            <img src="./img/icon-facebook.svg" alt="Bookmark" class="mx-4" />
-            <img src="./img/icon-twitter.svg" alt="Bookmark" />
+            <img src="./img/icon-facebook.svg" alt="icon-facebook" class="mx-4 social-active" />
+            <img src="./img/icon-twitter.svg" alt="icon-twitter" class="social-active" />
           </a>
         </div>
       </nav>
@@ -564,7 +564,7 @@
       })();
     </script>
 
-    <!--Cambiar las flechas azules del acordeon-->
-    <!--Poner la viñeta azul-->
+  
+
   </body>
 </html>

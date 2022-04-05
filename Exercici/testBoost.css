@@ -1,0 +1,32 @@
+html{
+  height: 100%;
+}
+body{
+  height: 100%;
+
+}
+
+.round-arrow-right{
+  
+  width: 500px;
+  height:380px;
+  background:hsl(231, 69%, 60%);
+  margin-top: -340px;
+  margin-left: 100px;
+  border-top-left-radius: 150px;
+  border-bottom-left-radius: 150px;
+  z-index:-1;
+}
+
+.round-arrow-left{
+  width:400px;
+  height:380px;
+  background-color:hsl(231, 69%, 60%);
+  margin-top: -240px;
+  margin-right: 100px;
+  border-top-right-radius: 150px;
+  border-bottom-right-radius: 150px;
+  z-index:-1;
+}
+
+  
