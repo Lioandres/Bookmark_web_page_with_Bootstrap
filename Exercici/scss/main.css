@@ -12013,6 +12013,10 @@ fieldset:disabled .btn {
   background: white;
 }
 
+.link-tab {
+  color: gray;
+}
+
 .link-tab:hover {
   color: #FA5959;
 }
@@ -12035,5 +12039,17 @@ fieldset:disabled .btn {
 .social-active:hover {
   -webkit-filter: invert(48%) sepia(13%) saturate(2727%) hue-rotate(314deg) brightness(103%) contrast(96%);
           filter: invert(48%) sepia(13%) saturate(2727%) hue-rotate(314deg) brightness(103%) contrast(96%);
+}
+
+.card-margin:nth-child(1) {
+  margin-top: 5%;
+}
+
+.card-margin:nth-child(2) {
+  margin-top: 10%;
+}
+
+.card-margin:nth-child(3) {
+  margin-top: 20%;
 }
 /*# sourceMappingURL=main.css.map */
