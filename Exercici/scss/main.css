@@ -12041,15 +12041,19 @@ fieldset:disabled .btn {
           filter: invert(48%) sepia(13%) saturate(2727%) hue-rotate(314deg) brightness(103%) contrast(96%);
 }
 
-.card-margin:nth-child(1) {
-  margin-top: 5%;
+.card-margin img {
+  width: 50%;
 }
 
-.card-margin:nth-child(2) {
-  margin-top: 10%;
-}
-
-.card-margin:nth-child(3) {
-  margin-top: 20%;
+@media only screen and (min-width: 700px) {
+  .card-margin:nth-child(1) {
+    margin-top: 5%;
+  }
+  .card-margin:nth-child(2) {
+    margin-top: 10%;
+  }
+  .card-margin:nth-child(3) {
+    margin-top: 15%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
