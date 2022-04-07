@@ -11979,19 +11979,19 @@ fieldset:disabled .btn {
   z-index: -1;
 }
 
-.btn-danger-active:hover {
+.btn-danger:hover {
   background-color: white;
   color: #FA5959;
   border: 1px solid #FA5959;
 }
 
-.btn-primary-active:hover {
+.btn-primary:hover {
   background-color: white;
   color: #5265E1;
   border: 1px solid #5265E1;
 }
 
-.btn-white-active:hover {
+.btn-light:hover {
   border: 1px solid #282829;
 }
 
@@ -12004,8 +12004,12 @@ fieldset:disabled .btn {
   color: #FA5959;
 }
 
-.text-primary-active:hover {
-  color: #5265E1;
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: #FA5959;
 }
 
 .link-tab {
